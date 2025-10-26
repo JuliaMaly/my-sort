@@ -8,7 +8,7 @@ with io.open(os.path.join(here, "README.md"), encoding="utf-8") as f:
 
 setup(
     name="julia-my-sort",
-    version="0.1.0",
+    version="0.1.1",
     description="Simple replacement of unix sort (supports -r and -n) implemented with Click",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -20,7 +20,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "my-sort = julia_my_sort.cli:main"
+            "my-sort = my_sort.cli:main"
         ]
     },
     python_requires=">=3.8",
